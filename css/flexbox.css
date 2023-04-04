@@ -1,0 +1,88 @@
+/* Cuando trabajamos con flexbox, yo quiero que los ítems que están dentro de un container o dentro de una div, él se comporten de una manera específica. */
+
+/* Es decir, que ellos hereden lo que sería la estructura de la etiqueta pie padre de estos items. Entonces en nuestro caso tendríamos lo que sería el header, como header principal, y tendremos dentro del container, entonces el container se va a comportar de manera flex. */
+
+
+/*----------| HEADER |------------*/
+
+.headerPrincipal .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav{
+    display: flex;
+}
+
+/*----------| MAIN |------------*/
+
+.contenidoPrincipal-cursos{
+    display: flex;
+    flex-wrap: wrap;
+    /* wrap nos quieabra el contenido segun la altura a la siguiente columna 
+    tomando esta vez el 23%*/
+}
+
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    /* dividimos el 100% en 20 % para colocar 5 elementos  */
+    width: 23%;
+}
+
+/*----------| MAIN 2 |------------*/
+
+.videoSobre .container{
+    display: flex;
+}
+
+.videoSobre-sobre{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.videoSobre-video{
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list{
+    flex-grow: 2;
+    flex-shrink: 2;
+
+}
+
+/*----------| FOOTER |------------*/
+
+.rodapePrincipal-navMap-list{
+    display: flex;
+    flex-direction: column;
+    /* aplicamos dirreción en columnas */
+    height: 260px;
+    /* le dimos una altura */
+    flex-wrap: wrap;
+    /* wrap nos quieabra el contenido segun la altura a la siguiente columna */
+}
+
+/* -------------------------------- */
+
+.rodapePrincipal-patrocinadores .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+.rodapePrincipal-contatoForm{
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset{
+    display: flex;
+}
